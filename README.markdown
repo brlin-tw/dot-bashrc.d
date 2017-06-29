@@ -15,6 +15,8 @@ echo -e '\n# Setup .bashrc.d\n# https://github.com/Lin-Buo-Ren/.bashrc.d\nsource
 
 Then restart Bash to make it affect
 
+To disable certain rules, simply rename them so the filename expansion is not end with `source.bash` (e.g. `Setup blablabla.source.bash.disabled`) or move the files to `~/.bashrc.d.disabled`
+
 ## Author
 林博仁 &lt;<Buo.Ren.Lin@gmail.com>&gt;
 
