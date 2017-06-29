@@ -1,4 +1,5 @@
 # .bashrc.d
+[![Build Status](https://travis-ci.org/Lin-Buo-Ren/.bashrc.d.svg?branch=master)](https://travis-ci.org/Lin-Buo-Ren/.bashrc.d)  
 This is a distributed bash run commands(rc) implementation
 
 <https://github.com/Lin-Buo-Ren/.bashrc.d>
