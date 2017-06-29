@@ -13,7 +13,7 @@ declare powerline_shell_location="$HOME/軟體/Powerline Shell: A Powerline styl
 if [ ! -f "$HOME/軟體/Powerline Shell: A Powerline style prompt for your shell/powerline-shell.py" ]; then
 	printf --\
 		"%s: Warning: Powerline installation not detected, skipping setup.\n"\
-		"${BASH_SOURCE}"
+		"${BASH_SOURCE[0]}"
 	return 0
 fi
 
