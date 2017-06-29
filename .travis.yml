@@ -93,12 +93,12 @@ script: true
 
 ### You can remove files that are not useful for caching here
 before_cache: true
-#- rm $HOME/.cabal/logs/build.log
+- rm --force $HOME/.cabal/logs/build.log
 
 ### Caches non-variating contents to speed up build
-#cache:
-  #directories:
-  #- $HOME/.cabal
+cache:
+  directories:
+  - $HOME/.cabal
 
 ### Commands if build phase fails
 after_failure: true
