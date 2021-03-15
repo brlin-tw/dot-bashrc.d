@@ -8,9 +8,9 @@ if [ -n "${BASHRC_D_SETUP_POWERLINE_SHELL}" ]; then
 	return 0
 fi
 
-declare powerline_shell_location="$HOME/軟體/Powerline Shell: A Powerline style prompt for your shell"
+declare powerline_shell_installation="$HOME/軟體/Powerline Shell: A Powerline style prompt for your shell"
 
-if [ ! -f "$HOME/軟體/Powerline Shell: A Powerline style prompt for your shell/powerline-shell.py" ]; then
+if [ ! -f "${powerline_shell_installation}/powerline-shell.py" ]; then
 	printf --\
 		"%s: Warning: Powerline installation not detected, skipping setup.\n"\
 		"${BASH_SOURCE[0]}"\
