@@ -15,9 +15,6 @@
 /continuous-integration export-ignore
 /docker-compose.yaml export-ignore
 "/Clean Filter for GNU Bash Scripts/" export-ignore
-"/Git Pre-commit Hook for GNU Bash Projects/" export-ignore
-"/GNU Bash Automatic Checking Program for Git Projects/" export-ignore
-"/Utilities for Travis CI/" export-ignore
 
 # Keep editorconfig for ease of editing of product files
 /.editorconfig -export-ignore

@@ -57,14 +57,6 @@ init(){
         include.path\
         ../.gitconfig
 
-    ln\
-        --verbose\
-        --relative\
-        --symbolic\
-        --force\
-        "${RUNTIME_EXECUTABLE_DIRECTORY}/Git Pre-commit Hook for GNU Bash Projects/Git Pre-commit Hook for GNU Bash Projects.bash"\
-        "${GIT_DIR}/hooks/pre-commit"
-
     printf --\
         "%s: All set!, happy hacking!\n"\
         "${RUNTIME_EXECUTABLE_NAME}"
