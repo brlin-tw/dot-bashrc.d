@@ -18,3 +18,8 @@
 
 # Keep editorconfig for ease of editing of product files
 /.editorconfig -export-ignore
+
+# Setup filters for GNU Bash scripts
+# Refer .gitconfig for more information
+*.sh filter=bash
+*.sh.source filter=bash
