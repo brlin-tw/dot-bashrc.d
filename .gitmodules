@@ -12,3 +12,5 @@
 	path = Clean Filter for GNU Bash Scripts
 	url = https://github.com/Lin-Buo-Ren/Clean-Filter-for-GNU-Bash-Scripts
 	ignore = dirty
+	shallow = true
+	fetchRecurseSubmodules = true
