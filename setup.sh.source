@@ -10,6 +10,13 @@ if [ -v _BASH_RC_D_SETUPPED ]; then
     return 0
 fi
 
+if ! shopt -s nullglob; then
+    printf \
+        'Error: Unable to set the "nullglob" shell option.\n' \
+        1>&2
+    return 1
+fi
+
 for source_file in "$HOME"/.bashrc.d/*.source.bash; do
     source "${source_file}"
 done
