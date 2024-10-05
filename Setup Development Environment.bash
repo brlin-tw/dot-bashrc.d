@@ -145,9 +145,3 @@ process_commandline_parameters() {
 }; declare -fr process_commandline_parameters;
 
 init "${@}"
-
-## This script is based on the GNU Bash Shell Script Template project
-## https://github.com/Lin-Buo-Ren/GNU-Bash-Shell-Script-Template
-## and is based on the following version:
-declare -r META_BASED_ON_GNU_BASH_SHELL_SCRIPT_TEMPLATE_VERSION="v1.26.0-32-g317af27-dirty"
-## You may rebase your script to incorporate new features and fixes from the template
