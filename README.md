@@ -22,7 +22,7 @@ Follow the following instructions to incorporate .bashrc.d to your user session:
 
 1. Restart your bash session to load the changes.
 
-To disable certain rules, simply rename them so the filename expansion is not end with `source.bash` (e.g. `Setup blablabla.source.bash.disabled`) or move the files to `~/.bashrc.d.disabled`
+To disable certain rules, simply rename them so the filename expansion is not end with `source.bash` (e.g. `Setup blablabla.source.bash.disabled`) or move the files to `~/.bashrc.d.disabled`.
 
 ## Licensing
 
