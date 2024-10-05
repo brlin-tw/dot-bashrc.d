@@ -10,7 +10,7 @@ Distributed bash run commands(rc) management solution.
 Run the following command in your home directory in terminal:
 
 ```bash
-git clone https://github.com/brlin-tw/dot-bashrc
+git clone https://github.com/brlin-tw/dot-bashrc.git
 echo -e '\n# Setup .bashrc.d\n# https://github.com/brlin-tw/dot-bashrc\nsource "${HOME}/.bashrc.d/README.setup"\n' >> "${HOME}/.bashrc"
 ```
 
