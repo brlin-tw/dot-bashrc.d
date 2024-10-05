@@ -5,11 +5,6 @@
 # Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-## Include Guard to prevent multiple sourcing
-if [ -v _BASH_RC_D_SETUPPED ]; then
-    return 0
-fi
-
 if ! shopt -s nullglob; then
     printf \
         'Error: Unable to set the "nullglob" shell option.\n' \
@@ -20,6 +15,3 @@ fi
 for source_file in "$HOME"/.bashrc.d/*.source.bash; do
     source "${source_file}"
 done
-
-## Set Include Guard
-declare _BASH_RC_D_SETUPPED=1
