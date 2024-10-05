@@ -1,14 +1,17 @@
 # shellcheck shell=bash
 # shellcheck disable=SC2034
 # Source this script in .bashrc to setup .bashrc.d
-# 林博仁 (C) 2017
+#
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 ## Include Guard to prevent multiple sourcing
 if [ -v _BASH_RC_D_SETUPPED ]; then
-	return 0
+    return 0
 fi
 
 for source_file in "$HOME"/.bashrc.d/*.source.bash; do
-	source "${source_file}"
+    source "${source_file}"
 done
 
 ## Set Include Guard

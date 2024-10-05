@@ -1,12 +1,26 @@
-[submodule "Git Pre-commit Hook for GNU Bash Projects"]
-	path = Git Pre-commit Hook for GNU Bash Projects
-	url = https://github.com/Lin-Buo-Ren/Git_Pre-commit_Hook_for_GNU_Bash_Projects
+# Git submodule definition file
+#
+# Reference:
+#
+# * Git - gitmodules Documentation
+#   https://git-scm.com/docs/gitmodules
+#
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 [submodule "Clean Filter for GNU Bash Scripts"]
 	path = Clean Filter for GNU Bash Scripts
 	url = https://github.com/Lin-Buo-Ren/Clean-Filter-for-GNU-Bash-Scripts
+	ignore = dirty
+[submodule "Git Pre-commit Hook for GNU Bash Projects"]
+	path = Git Pre-commit Hook for GNU Bash Projects
+	url = https://github.com/Lin-Buo-Ren/Git_Pre-commit_Hook_for_GNU_Bash_Projects
+	ignore = dirty
 [submodule "GNU Bash Automatic Checking Program for Git Projects"]
 	path = GNU Bash Automatic Checking Program for Git Projects
 	url = https://github.com/Lin-Buo-Ren/GNU-Bash-Automatic-Checking-Program-for-Git-Projects
+	ignore = dirty
 [submodule "Utilities for Travis CI"]
 	path = Utilities for Travis CI
 	url = http://github.com/Lin-Buo-Ren/Utilities-for-Travis-CI
+	ignore = dirty

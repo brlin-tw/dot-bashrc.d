@@ -1,2 +1,6 @@
+# Project-specific Git configuration file
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 [filter "bash"]
 	clean = \"./Clean Filter for GNU Bash Scripts/Clean Filter for GNU Bash Scripts.bash\"
