@@ -74,21 +74,26 @@ init(){
 
 ## Traps: Functions that are triggered when certain condition occurred
 ## Shell Builtin Commands » Bourne Shell Builtins » trap
+
+# shellcheck disable=SC2317
 trap_errexit(){
     printf "An error occurred and the script is prematurely aborted\n" 1>&2
     return 0
 }; declare -fr trap_errexit; trap trap_errexit ERR
 
+# shellcheck disable=SC2317
 trap_exit(){
     return 0
 }; declare -fr trap_exit; trap trap_exit EXIT
 
+# shellcheck disable=SC2317
 trap_return(){
     local returning_function="${1}"
 
     printf "DEBUG: %s: returning from %s\n" "${FUNCNAME[0]}" "${returning_function}" 1>&2
 }; declare -fr trap_return
 
+# shellcheck disable=SC2317
 trap_interrupt(){
     printf "Recieved SIGINT, script is interrupted.\n" 1>&2
     return 0
