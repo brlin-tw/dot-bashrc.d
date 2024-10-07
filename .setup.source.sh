@@ -13,5 +13,7 @@ if ! shopt -s nullglob; then
 fi
 
 for source_file in "$HOME"/.bashrc.d/*.source.sh; do
+    # False positive: External resource
+    # shellcheck source=/dev/null
     source "${source_file}"
 done

@@ -133,8 +133,8 @@ fi
 product_dir="${script_dir}"
 product_assets=(
     "${product_dir}/README"*.md
-    "${product_dir}/setup.sh.source"
-    #"${product_dir}/functions.sh.source"
+    "${product_dir}/.setup.source.sh"
+    #"${product_dir}/.functions.source.sh"
 
     # For ease of editing product files
     "${product_dir}/.editorconfig"
@@ -160,6 +160,7 @@ done
 
 obsoleted_assets=(
     "${user_bashrc_dropin_dir}/README.setup"
+    "${user_bashrc_dropin_dir}/setup.sh.source"
 )
 for asset in "${obsoleted_assets[@]}"; do
     asset_filename="${asset##*/}"
@@ -193,6 +194,7 @@ is_setup_logic_installed(){
     # shellcheck disable=SC2016
     local -a grep_opts=(
         # The search patterns specified
+        --regexp='. "${HOME}/.bashrc.d/.setup.source.sh"'
         --regexp='. "${HOME}/.bashrc.d/setup.sh.source"'
         --regexp='. "${HOME}/.bashrc.d/README.setup"'
 
@@ -223,6 +225,7 @@ is_outdated_setup_logic_installed(){
     # shellcheck disable=SC2016
     local -a grep_opts=(
         # The search patterns specified
+        --regexp='. "${HOME}/.bashrc.d/setup.sh.source"'
         --regexp='. "${HOME}/.bashrc.d/README.setup"'
 
         # The search patterns are literal strings, not expression
@@ -256,7 +259,8 @@ if is_setup_logic_installed "${user_bashrc}"; then
             --regexp-extended
 
             # sed expression to process
-            --expression='s@\. "\$\{HOME\}/\.bashrc\.d/README\.setup"@. "${HOME}/.bashrc.d/setup.sh.source"@g'
+            --expression='s@\. "\$\{HOME\}/\.bashrc\.d/README\.setup"@. "${HOME}/.bashrc.d/.setup.source.sh"@g'
+            --expression='s@\. "\$\{HOME\}/\.bashrc\.d/setup\.sh\.source"@. "${HOME}/.bashrc.d/.setup.source.sh"@g'
         )
         if ! sed "${sed_opts[@]}" "${user_bashrc}"; then
             printf \
@@ -272,7 +276,7 @@ else
 
 # Setup .bashrc.d
 # https://github.com/brlin-tw/.bashrc.d
-. "\${HOME}/.bashrc.d/setup.sh.source"
+. "\${HOME}/.bashrc.d/.setup.source.sh"
 
 EOF
     then

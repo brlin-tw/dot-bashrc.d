@@ -22,10 +22,17 @@ Follow the following instructions to incorporate .bashrc.d to your user session:
 
 1. Restart your bash session to load the changes.
 
-To disable certain rules, simply rename them so the filename expansion is not end with `source.bash` (e.g. `Setup blablabla.source.bash.disabled`) or move the files to `~/.bashrc.d.disabled`.
+To disable certain rules, simply rename them so the filename expansion is not end with `source.sh` (e.g. `Setup blablabla.source.sh.disabled`) or move the files to `~/.bashrc.d.disabled`.
 
 ## Licensing
 
 Unless otherwise noted(individual file's header/[REUSE.toml](REUSE.toml)), this product is licensed under [the version 3 of the GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html.en), or any of its recent versions you would prefer.
 
 This work complies to [the REUSE Specification](https://reuse.software/spec/), refer the [REUSE - Make licensing easy for everyone](https://reuse.software/) website for info regarding the licensing of this product.
+
+## References
+
+The following material are referenced during the development of this project:
+
+* [Git - gitattributes Documentation](https://git-scm.com/docs/gitattributes)  
+  Explains the format of the Git path attributes file.

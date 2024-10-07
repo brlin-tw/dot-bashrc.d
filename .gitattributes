@@ -23,4 +23,4 @@
 # Setup filters for GNU Bash scripts
 # Refer .gitconfig for more information
 *.sh filter=bash
-*.sh.source filter=bash
+*.source.sh filter=bash -export-ignore
