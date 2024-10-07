@@ -275,7 +275,7 @@ else
     if ! cat >>"${user_bashrc}" <<EOF
 
 # Setup .bashrc.d
-# https://github.com/brlin-tw/.bashrc.d
+# https://github.com/brlin-tw/dot-bashrc.d
 . "\${HOME}/.bashrc.d/.setup.source.sh"
 
 EOF
